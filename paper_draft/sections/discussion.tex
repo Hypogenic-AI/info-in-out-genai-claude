@@ -1,0 +1,48 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{LLMs as Decompressors}
+\label{sec:decompressor}
+
+Our central finding is that LLMs act as \emph{decompressors}: they expand compressed semantic prompts into longer, more predictable text. The decomposition in \eqref{eq:decomp} makes this precise. A prompt is a compressed representation of the user's intent---short, informationally dense, and underspecified. The model ``decompresses'' it by sampling from its learned distribution, producing text that is longer ($6$--$44\times$) but less dense per byte ($0.34$--$0.64\times$).
+
+This view is consistent with the data processing inequality. The total information in the output is bounded by the information in the input \emph{plus} the information stored in the model's weights. The model's weights---billions of parameters trained on terabytes of data---encode a compressed version of the training distribution. When the model generates text, it draws on this stored information to fill in details not specified in the prompt. The ``extra'' bits in the output (the $4$--$20\times$ total amplification) come from the model's prior, not from nowhere.
+
+\subsection{The Compressor Determines the Conclusion}
+\label{sec:compressor}
+
+Our most surprising finding is that gzip and LLM-based compression give \emph{opposite} conclusions about whether LLM text is more or less compressible than human text. By gzip, GPT text has higher bpb (6.15 vs.\ 5.13, $d = -1.16$); by LLM-based compression, GPT text is $20\times$ more compressible \cite{wang2025lossless}.
+
+This is not a contradiction---it reflects what each compressor captures. Gzip detects surface-level statistical regularities: character $n$-grams, repeated substrings, and local patterns. LLM text, despite following the model's own statistical patterns closely, may actually exhibit slightly higher surface-level entropy than human text---perhaps because LLMs produce more varied vocabulary and fewer repetitive constructions than typical human writing.
+
+LLM-based compressors, by contrast, capture the deep statistical structure that LLMs learn during training. LLM text is generated \emph{from} this distribution, so it is naturally well-predicted by an LLM compressor. Human text, written by a different generative process, is less predictable to the LLM.
+
+This finding has methodological implications: any claim about LLM text information content must specify the compressor, because the conclusion depends on it.
+
+\subsection{Raw Entropy Is Not Information}
+\label{sec:entropy}
+
+The gibberish control experiment (\secref{sec:gibberish}) demonstrates that high raw entropy does not translate to high output information. Random ASCII has ${\sim}10$ bpb---near the theoretical maximum of 8 bpb for uniformly random bytes---but the model cannot ``route'' this entropy through its learned representations. Instead, it produces confused or explanatory responses with typical LLM density (${\sim}5$--$7$ bpb).
+
+This confirms an important distinction: \emph{information} in the Shannon sense (unpredictability) is not the same as \emph{usable information} for a generative model. The model can only amplify information that is compatible with its learned representations. Gibberish, despite being maximally unpredictable, carries no semantic content that the model can expand.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Gzip limitations on short texts.}
+Gzip has a fixed header overhead of ${\sim}20$ bytes, making bpb unreliable for texts shorter than ${\sim}50$ bytes. Our Level 1--2 prompts (10--38 characters) show inflated bpb values (12--24 bpb, well above the theoretical 8 bpb maximum for uniform random bytes). We mitigate this by focusing quantitative claims on Level 3+ prompts and filtering the \gptwiki dataset to $\geq 100$ characters, but the short-text results should be interpreted with caution.
+
+\para{Single model.}
+We test only \gptmini. The \densityratio and log-probability patterns may differ for other architectures, model sizes, or training regimes. Larger models, which better compress their training data, might produce even lower-density outputs.
+
+\para{Single run per prompt.}
+With temperature $= 0.7$, outputs are stochastic. Running each prompt multiple times would yield confidence intervals on individual measurements, though our aggregate statistics over 14 prompts partially mitigate this.
+
+\para{Syntactic vs.\ semantic information.}
+Gzip measures syntactic and statistical complexity, not semantic content. Two semantically equivalent texts with different wording will have different gzip compression. LLM log-probabilities partially address this by measuring surprisal under a model that captures semantic structure, but only under the generating model's own distribution.
+
+\para{Input log-probabilities unavailable.}
+The chat API provides log-probabilities only for output tokens, not input tokens. A complete information-theoretic accounting would require input log-probabilities (available through some model APIs with echo), enabling a direct comparison of LLM-measured input vs.\ output information.
+
+\para{No image generation.}
+We focus on text-to-text generation. The information relationship in text-to-image systems (\eg diffusion models) remains an open question requiring different compression measures (JPEG, WebP, learned image compressors).

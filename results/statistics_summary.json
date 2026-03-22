@@ -1,0 +1,72 @@
+{
+  "exp1_total_bits": {
+    "slope": 4.147882859738722,
+    "intercept": 3611.399341243223,
+    "r_squared": 0.6487232880646252,
+    "p_value": 0.0005076839437767576,
+    "correlation": 0.8054336025176906
+  },
+  "exp1_density": {
+    "spearman_rho": 0.8813186813186813,
+    "spearman_p": 3.109511008397837e-05,
+    "input_mean_bpb": 10.998452257486875,
+    "output_mean_bpb": 7.050259212134347
+  },
+  "exp2_gibberish": {
+    "input_mean_bpb": 7.565269264976813,
+    "output_mean_bpb": 6.434764989893412,
+    "types": [
+      "random_chars",
+      "random_chars_long",
+      "shuffled_words",
+      "keyboard_mash",
+      "repeated_nonsense",
+      "unicode_noise"
+    ],
+    "input_bpb": [
+      9.6,
+      6.656,
+      8.8,
+      10.264150943396226,
+      1.425,
+      8.646464646464647
+    ],
+    "output_bpb": [
+      6.658682634730539,
+      6.744186046511628,
+      5.532133676092545,
+      7.6521739130434785,
+      7.67741935483871,
+      4.3439943141435675
+    ]
+  },
+  "exp3_human_vs_gpt": {
+    "human_mean_bpb": 23.786686143037606,
+    "gpt_mean_bpb": 14.002843504078996,
+    "cohens_d": 0.3839651669192064,
+    "wilcoxon_stat": 5235.0,
+    "wilcoxon_p": 1.729231197633695e-07,
+    "n_samples": 200
+  },
+  "exp1_amplification": {
+    "mean_amplification": 6.567243274527734,
+    "min_amplification": 0.90625,
+    "max_amplification": 19.5,
+    "amplification_by_prompt": {
+      "trivial_fact": 0.90625,
+      "single_word": 1.8,
+      "yes_no": 5.527777777777778,
+      "capital": 1.02,
+      "definition": 2.543859649122807,
+      "simple_list": 1.5434782608695652,
+      "explain_concept": 15.344827586206897,
+      "compare": 10.867256637168142,
+      "history": 19.5,
+      "technical_detail": 11.483018867924528,
+      "analysis": 7.216981132075472,
+      "data_analysis": 3.82972972972973,
+      "code_generation": 6.341614906832298,
+      "multi_domain": 4.016611295681063
+    }
+  }
+}

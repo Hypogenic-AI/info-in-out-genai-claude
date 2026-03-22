@@ -1,0 +1,11 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We present the first systematic empirical study of the input--output information relationship in large language models. Using gzip compression and LLM log-probabilities as complementary information measures, we analyze prompts spanning six complexity levels, gibberish controls, and a paired human-vs-LLM corpus.
+
+Our results support a consistent picture: \textbf{LLMs act as decompressors}. They expand informationally dense prompts into longer, less dense outputs, with per-byte information content dropping to $0.49\times$ the input density for complex prompts. From the model's own perspective, outputs contain only ${\sim}0.3$ \bpt of surprise---nearly perfectly predictable given the prompt and model weights. The apparent information amplification ($4$--$20\times$ in total gzip bits) is entirely attributable to length expansion, with the ``extra'' information sourced from the model's weights rather than created \emph{de novo}.
+
+We identify a critical methodological finding: the choice of compressor determines whether LLM text appears more or less compressible than human text. Gzip and LLM-based compressors give opposite conclusions, reconciling an apparent contradiction between our results and prior work. This underscores that claims about information content are meaningful only relative to a specified compressor.
+
+\para{Future work.}
+Three directions are most promising. First, extending this analysis to multiple models and model sizes would reveal whether the \densityratio varies with scale. Second, a temperature sweep ($0.0$ to $1.5$) would characterize how sampling entropy affects output information density. Third, extending to text-to-image generation would test whether an analogous \densityratio exists for visual outputs, requiring cross-modal compression measures.

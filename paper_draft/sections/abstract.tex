@@ -1,0 +1,7 @@
+Large language models appear to generate rich, complex outputs from simple prompts, raising a fundamental question: does the information content of an LLM's output exceed that of its input?
+We empirically investigate this question by measuring information content via two complementary compressors---gzip and LLM log-probabilities---across prompts of varying complexity, gibberish controls, and a paired human-vs-LLM text corpus.
+We find that while LLM outputs contain more \emph{total} compressed bits than inputs (due to length expansion of $6$--$44\times$), the information \emph{density} per byte is consistently lower: outputs average $0.49\times$ the input density for complex prompts.
+From the model's own perspective, outputs are nearly perfectly predictable at ${\sim}0.3$ \bpt, confirming that generation stays within the model's learned distribution.
+We further show that the choice of compressor is decisive: gzip finds LLM text \emph{less} compressible than human text ($p < 10^{-11}$, Cohen's $d = -1.16$), while LLM-based compressors find the opposite---reconciling an apparent contradiction in prior work.
+Gibberish inputs with high raw entropy produce outputs of normal information density, confirming that raw entropy does not equal usable information.
+Our results support the view that LLMs act as \emph{decompressors}: they expand compressed semantic prompts into longer, predictable text, with the apparent information amplification sourced entirely from model weights.

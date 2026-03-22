@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/info-in-out-genai-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/info-in-out-genai-claude/literature_review.md",
+        "resources_catalog": "/workspaces/info-in-out-genai-claude/resources.md",
+        "papers_dir": "/workspaces/info-in-out-genai-claude/papers",
+        "datasets_dir": "/workspaces/info-in-out-genai-claude/datasets",
+        "code_dir": "/workspaces/info-in-out-genai-claude/code"
+      },
+      "log_file": "/workspaces/info-in-out-genai-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/info-in-out-genai-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1233.9878742694855
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 866.7386054992676,
+      "log_file": "/workspaces/info-in-out-genai-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/info-in-out-genai-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/info-in-out-genai-claude"
+}

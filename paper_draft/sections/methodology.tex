@@ -1,0 +1,58 @@
+\section{Methodology}
+\label{sec:method}
+
+We measure the information content of LLM inputs and outputs using two complementary compressors, then analyze their relationship across prompts of varying complexity, gibberish controls, and a paired human-vs-LLM corpus.
+
+\subsection{Information Measures}
+\label{sec:measures}
+
+\para{Gzip compression.}
+We use gzip at maximum compression level (level 9) to measure statistical complexity. For a text $x$ of length $|x|$ bytes with compressed length $C(x)$ bytes, we compute:
+\begin{align}
+    \text{Compression ratio} &= \frac{|x|}{C(x)}, \label{eq:ratio} \\
+    \text{Bits per byte (bpb)} &= \frac{8 \cdot C(x)}{|x|}. \label{eq:bpb}
+\end{align}
+Lower bpb indicates higher compressibility (\ie less information per byte). Gzip is model-agnostic and captures syntactic and statistical regularities without bias toward any particular text distribution.
+
+\para{LLM log-probabilities.}
+We use the generating model's (\gptmini) own next-token log-probabilities to measure surprisal. For an output sequence $y = (y_1, \ldots, y_T)$, the total information content in bits is:
+\begin{equation}
+    I_{\text{logprob}}(y) = -\sum_{t=1}^{T} \log_2 p(y_t \mid y_{<t}, x), \label{eq:logprob}
+\end{equation}
+where $x$ is the input prompt. This directly measures how ``surprising'' the output is from the model's own perspective.
+
+\para{Why two compressors?}
+Gzip and LLM log-probabilities capture fundamentally different aspects of information content. Gzip measures statistical complexity visible to a context-free sliding-window algorithm. LLM log-probabilities measure surprisal relative to the model's learned distribution, which encodes far richer structure. Comparing the two reveals whether findings are compressor-dependent---and as we show in \secref{sec:results}, they are.
+
+\subsection{Datasets}
+\label{sec:datasets}
+
+\para{Complexity-graded prompts.}
+We construct 14 prompts spanning six complexity levels (1 = trivial, 6 = multi-domain), ranging from 10 to 1{,}473 characters. Level 1 includes simple factual queries (\eg ``What is 2+2?''); Level 3 includes conceptual explanations; Level 5 includes prompts with embedded data requiring analysis; Level 6 is a multi-section consulting report request. Full prompts are provided in the appendix.
+
+\para{Gibberish controls.}
+We construct six gibberish prompts: random ASCII characters (100 and 500 chars), shuffled real words, keyboard mashing, repeated nonsense words, and Unicode symbols. These inputs have high raw entropy but carry no semantic content, testing whether LLMs ``route'' meaningless entropy into high-information outputs.
+
+\para{\gptwiki corpus.}
+We use the \gptwiki dataset from HuggingFace, which contains paired human-written and GPT-generated Wikipedia introductions. We filter to texts with $\geq 100$ characters to avoid gzip header overhead artifacts on very short texts, yielding $n = 99$ valid pairs.
+
+\para{Log-probability test set.}
+We construct five prompts (one per complexity level 1--5) specifically for log-probability analysis, where we collect per-token log-probabilities from \gptmini.
+
+\subsection{Experimental Protocol}
+\label{sec:protocol}
+
+For each prompt, we send it to \gptmini via the OpenAI API with temperature $= 0.7$, maximum tokens $= 2{,}048$, and request log-probabilities for the output tokens. We compute gzip compression metrics on both the input prompt and the generated response, and aggregate LLM log-probabilities into total bits and \bpt.
+
+We define two derived metrics to characterize the input--output information relationship:
+\begin{align}
+    \text{Information amplification} &= \frac{\text{output compressed bits}}{\text{input compressed bits}}, \label{eq:amp} \\
+    \text{Density ratio} &= \frac{\text{output bpb}}{\text{input bpb}}. \label{eq:density}
+\end{align}
+An \infoamp greater than 1 means the output contains more total compressed bits than the input. A \densityratio less than 1 means the output is less informationally dense per byte than the input.
+
+\para{Statistical analysis.}
+We use Pearson and Spearman correlations to test whether output complexity tracks input complexity, a Wilcoxon signed-rank test for the paired human-vs-LLM comparison, and report Cohen's $d$ for effect sizes. Significance level is $\alpha = 0.05$.
+
+\para{Reproducibility.}
+All experiments use a fixed random seed (42). API calls were made on a single day. Code and data are available in the supplementary material.

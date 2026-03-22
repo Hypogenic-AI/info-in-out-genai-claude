@@ -1,0 +1,352 @@
+[
+  {
+    "level": 1,
+    "label": "trivial_fact",
+    "input_text": "What is 2+2?",
+    "output_text": "2 + 2 = 4",
+    "input_chars": 12,
+    "output_chars": 9,
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "input_gzip": {
+      "original_bytes": 12,
+      "compressed_bytes": 32,
+      "compression_ratio": 0.375,
+      "bits_per_byte": 21.333333333333332
+    },
+    "output_gzip": {
+      "original_bytes": 9,
+      "compressed_bytes": 29,
+      "compression_ratio": 0.3103448275862069,
+      "bits_per_byte": 25.77777777777778
+    },
+    "output_mean_bits_per_token": 0.1438967226855382,
+    "output_total_bits": 1.0072770587987674,
+    "output_bits_per_char": 0.11191967319986304
+  },
+  {
+    "level": 1,
+    "label": "single_word",
+    "input_text": "Say hello.",
+    "output_text": "Hello! How can I assist you today?",
+    "input_chars": 10,
+    "output_chars": 34,
+    "input_tokens": 10,
+    "output_tokens": 9,
+    "input_gzip": {
+      "original_bytes": 10,
+      "compressed_bytes": 30,
+      "compression_ratio": 0.3333333333333333,
+      "bits_per_byte": 24.0
+    },
+    "output_gzip": {
+      "original_bytes": 34,
+      "compressed_bytes": 54,
+      "compression_ratio": 0.6296296296296297,
+      "bits_per_byte": 12.705882352941176
+    },
+    "output_mean_bits_per_token": 0.020346553201426178,
+    "output_total_bits": 0.1831189788128356,
+    "output_bits_per_char": 0.005385852318024576
+  },
+  {
+    "level": 1,
+    "label": "yes_no",
+    "input_text": "Is the sky blue?",
+    "output_text": "Yes, the sky appears blue to human eyes during the day. This is because molecules in the Earth's atmosphere scatter sunlight in all directions, and blue light is scattered more than other colors because it travels as shorter, smaller waves. This phenomenon is known as Rayleigh scattering.",
+    "input_chars": 16,
+    "output_chars": 289,
+    "input_tokens": 12,
+    "output_tokens": 54,
+    "input_gzip": {
+      "original_bytes": 16,
+      "compressed_bytes": 36,
+      "compression_ratio": 0.4444444444444444,
+      "bits_per_byte": 18.0
+    },
+    "output_gzip": {
+      "original_bytes": 289,
+      "compressed_bytes": 199,
+      "compression_ratio": 1.4522613065326633,
+      "bits_per_byte": 5.508650519031142
+    },
+    "output_mean_bits_per_token": 0.1551687417275773,
+    "output_total_bits": 8.379112053289177,
+    "output_bits_per_char": 0.028993467312419297
+  },
+  {
+    "level": 2,
+    "label": "capital",
+    "input_text": "What is the capital of France?",
+    "output_text": "The capital of France is Paris.",
+    "input_chars": 30,
+    "output_chars": 31,
+    "input_tokens": 14,
+    "output_tokens": 7,
+    "input_gzip": {
+      "original_bytes": 30,
+      "compressed_bytes": 50,
+      "compression_ratio": 0.6,
+      "bits_per_byte": 13.333333333333334
+    },
+    "output_gzip": {
+      "original_bytes": 31,
+      "compressed_bytes": 51,
+      "compression_ratio": 0.6078431372549019,
+      "bits_per_byte": 13.161290322580646
+    },
+    "output_mean_bits_per_token": 1.6274238431953114e-07,
+    "output_total_bits": 1.139196690236718e-06,
+    "output_bits_per_char": 3.674828033021671e-08
+  },
+  {
+    "level": 2,
+    "label": "definition",
+    "input_text": "Define photosynthesis in one sentence.",
+    "output_text": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water.",
+    "input_chars": 38,
+    "output_chars": 180,
+    "input_tokens": 14,
+    "output_tokens": 32,
+    "input_gzip": {
+      "original_bytes": 38,
+      "compressed_bytes": 57,
+      "compression_ratio": 0.6666666666666666,
+      "bits_per_byte": 12.0
+    },
+    "output_gzip": {
+      "original_bytes": 180,
+      "compressed_bytes": 145,
+      "compression_ratio": 1.2413793103448276,
+      "bits_per_byte": 6.444444444444445
+    },
+    "output_mean_bits_per_token": 0.0635539880653217,
+    "output_total_bits": 2.0337276180902943,
+    "output_bits_per_char": 0.011298486767168301
+  },
+  {
+    "level": 2,
+    "label": "simple_list",
+    "input_text": "List three primary colors.",
+    "output_text": "The three primary colors are red, blue, and yellow.",
+    "input_chars": 26,
+    "output_chars": 51,
+    "input_tokens": 12,
+    "output_tokens": 12,
+    "input_gzip": {
+      "original_bytes": 26,
+      "compressed_bytes": 46,
+      "compression_ratio": 0.5652173913043478,
+      "bits_per_byte": 14.153846153846153
+    },
+    "output_gzip": {
+      "original_bytes": 51,
+      "compressed_bytes": 71,
+      "compression_ratio": 0.7183098591549296,
+      "bits_per_byte": 11.137254901960784
+    },
+    "output_mean_bits_per_token": 3.649085784221656e-05,
+    "output_total_bits": 0.0004378902941065987,
+    "output_bits_per_char": 8.586084198168601e-06
+  },
+  {
+    "level": 3,
+    "label": "explain_concept",
+    "input_text": "Explain how a refrigerator works, covering the thermodynamic cycle involved.",
+    "output_text": "A refrigerator works by transferring heat from the inside of the fridge (the refrigerated space) to the outside environment, thereby keeping the inside cool. This process is based on the principles of thermodynamics, particularly using a refrigeration cycle that involves phase changes of a working fluid (refrigerant) and heat transfer.\n\n### Basic Principle\nA refrigerator moves heat **against its natural flow** \u2014 from a cold area (inside the fridge) to a warmer area (the room). This requires work input, usually done by an electric compressor, because heat naturally flows from hot to cold.\n\n### The Thermodynamic Cycle: Vapor Compression Cycle\nMost household refrigerators use the **vapor compression refrigeration cycle**, which consists of four key components and four main steps:\n\n1. **Compressor**\n2. **Condenser coil**\n3. **Expansion valve (or capillary tube)**\n4. **Evaporator coil**\n\n---\n\n### Step-by-Step Explanation\n\n#### 1. Compression (Compressor)\n- The refrigerant enters the compressor as a low-pressure, low-temperature vapor.\n- The compressor does mechanical work on the refrigerant, compressing it and raising its pressure and temperature.\n- The refrigerant leaves the compressor as a high-pressure, high-temperature vapor.\n\n#### 2. Condensation (Condenser)\n- The high-pressure, hot refrigerant vapor flows through the condenser coils, usually located at the back or bottom of the refrigerator.\n- Here, it releases heat to the surrounding air (heat rejection).\n- As the refrigerant cools down, it condenses into a high-pressure liquid.\n\n#### 3. Expansion (Expansion Valve or Capillary Tube)\n- The high-pressure liquid refrigerant passes through an expansion valve or capillary tube.\n- This valve causes a sudden drop in pressure.\n- As pressure drops, some of the refrigerant evaporates and cools significantly (due to Joule-Thomson effect).\n- The refrigerant leaving the valve is a low-pressure, low-temperature mixture of liquid and vapor.\n\n#### 4. Evaporation (Evaporator)\n- The cold refrigerant mixture flows through the evaporator coils inside the fridge.\n- It absorbs heat from the interior of the refrigerator (the refrigerated space).\n- As it absorbs heat, the refrigerant evaporates completely into a low-pressure vapor.\n- This absorption of heat cools the inside of the fridge.\n- The refrigerant vapor then returns to the compressor to repeat the cycle.\n\n---\n\n### Thermodynamic Perspective\n\n- The system operates between two thermal reservoirs:\n  - **Cold reservoir:** Inside of the fridge (low temperature)\n  - **Hot reservoir:** Room air outside (higher temperature)\n  \n- The refrigerant acts as the working fluid undergoing phase changes (liquid \u2194 vapor), allowing efficient heat absorption and release.\n\n- The work input (by the compressor) enables heat to flow from the cold reservoir to the hot reservoir, in accordance with the second law of thermodynamics.\n\n---\n\n### Summary\n\n- **Heat absorption:** Refrigerant evaporates inside the fridge, absorbing heat and cooling the interior.\n- **Work done:** Compressor compresses refrigerant vapor, increasing pressure and temperature.\n- **Heat rejection:** Refrigerant condenses outside the fridge, releasing heat to the room.\n- **Expansion:** Pressure drops to cool refrigerant before it enters the evaporator again.\n\nThis cycle repeats continuously, maintaining a cool temperature inside the refrigerator.",
+    "input_chars": 76,
+    "output_chars": 3387,
+    "input_tokens": 20,
+    "output_tokens": 686,
+    "input_gzip": {
+      "original_bytes": 76,
+      "compressed_bytes": 87,
+      "compression_ratio": 0.8735632183908046,
+      "bits_per_byte": 9.157894736842104
+    },
+    "output_gzip": {
+      "original_bytes": 3391,
+      "compressed_bytes": 1335,
+      "compression_ratio": 2.540074906367041,
+      "bits_per_byte": 3.1495134178708346
+    },
+    "output_mean_bits_per_token": 0.4670265242100798,
+    "output_total_bits": 320.3801956081147,
+    "output_bits_per_char": 0.09459114130738551
+  },
+  {
+    "level": 3,
+    "label": "compare",
+    "input_text": "Compare and contrast TCP and UDP protocols, discussing their key differences in reliability, speed, and use cases.",
+    "output_text": "Certainly! Here's a comparison of **TCP (Transmission Control Protocol)** and **UDP (User Datagram Protocol)**, focusing on their key differences in **reliability**, **speed**, and **use cases**:\n\n---\n\n### 1. **Reliability**\n\n- **TCP:**\n  - **Connection-oriented:** Establishes a connection between sender and receiver before data transfer (three-way handshake).\n  - **Reliable delivery:** Ensures all data packets are delivered in order and without errors.\n  - **Error checking and recovery:** Uses acknowledgments (ACKs), retransmissions, and sequence numbers to detect and recover lost or corrupted packets.\n  - **Flow control and congestion control:** Adjusts transmission rate based on network conditions to avoid congestion.\n\n- **UDP:**\n  - **Connectionless:** Sends data without establishing a connection.\n  - **Unreliable delivery:** Does not guarantee packet delivery, order, or error-free transmission.\n  - **No acknowledgments or retransmissions:** If packets are lost or corrupted, UDP does not attempt to recover them.\n  - **No flow or congestion control:** Sends packets at the application's pace without adjustment.\n\n---\n\n### 2. **Speed**\n\n- **TCP:**\n  - Generally slower due to overhead from connection setup, error checking, acknowledgments, and flow control.\n  - Suitable for applications where data integrity and order are critical.\n\n- **UDP:**\n  - Faster because it has minimal overhead and no connection setup.\n  - Suitable for time-sensitive applications where speed is more important than reliability.\n\n---\n\n### 3. **Use Cases**\n\n- **TCP:**\n  - Web browsing (HTTP/HTTPS)\n  - Email (SMTP, IMAP, POP3)\n  - File transfers (FTP, SFTP)\n  - Remote access (SSH, Telnet)\n  \n  Use cases that require **reliable**, **ordered** delivery of data.\n\n- **UDP:**\n  - Live streaming (audio/video)\n  - Online gaming\n  - Voice over IP (VoIP)\n  - DNS queries\n  - Broadcasting and multicasting\n  \n  Use cases where **low latency** and **speed** are prioritized over reliability.\n\n---\n\n### Summary Table\n\n| Feature            | TCP                              | UDP                        |\n|--------------------|---------------------------------|----------------------------|\n| Protocol Type      | Connection-oriented              | Connectionless             |\n| Reliability        | Reliable, guarantees delivery    | Unreliable, no guarantees  |\n| Ordering           | Guarantees packet order          | No ordering guarantee      |\n| Error Checking     | Yes, with retransmission         | Yes, but no retransmission |\n| Speed              | Slower due to overhead           | Faster, minimal overhead   |\n| Flow Control       | Yes                             | No                         |\n| Use Cases          | File transfer, web, email        | Streaming, gaming, VoIP    |\n\n---\n\n**In summary:**  \n- Use **TCP** when you need reliability and data integrity.  \n- Use **UDP** when speed and low latency are more important than perfect delivery.\n\nLet me know if you want more details on any specific aspect!",
+    "input_chars": 114,
+    "output_chars": 3017,
+    "input_tokens": 28,
+    "output_tokens": 626,
+    "input_gzip": {
+      "original_bytes": 114,
+      "compressed_bytes": 113,
+      "compression_ratio": 1.008849557522124,
+      "bits_per_byte": 7.9298245614035086
+    },
+    "output_gzip": {
+      "original_bytes": 3017,
+      "compressed_bytes": 1228,
+      "compression_ratio": 2.4568403908794787,
+      "bits_per_byte": 3.2562147828969175
+    },
+    "output_mean_bits_per_token": 0.3111930796982964,
+    "output_total_bits": 194.80686789113366,
+    "output_bits_per_char": 0.0645697275078335
+  },
+  {
+    "level": 3,
+    "label": "history",
+    "input_text": "Describe the causes and consequences of the French Revolution, including economic, social, and political factors.",
+    "output_text": "The **French Revolution** (1789\u20131799) was a pivotal event that dramatically transformed France and had lasting effects on the world. Its causes were multifaceted, involving economic, social, and political factors, and its consequences reshaped French society and government.\n\n---\n\n### Causes of the French Revolution\n\n#### Economic Causes:\n1. **Financial Crisis:** France faced a severe financial crisis due to years of deficit spending, costly wars (including support for the American Revolution), and an inefficient tax system that failed to adequately tax the privileged classes (nobility and clergy).\n2. **Debt and Taxation:** The government was deeply in debt and attempted to impose new taxes on the nobility, which was resisted. The tax burden fell disproportionately on the Third Estate (commoners), including peasants and the burgeoning bourgeoisie.\n3. **Poor Harvests and Food Shortages:** In the late 1780s, poor harvests led to food shortages, rising bread prices, and widespread hunger, fueling discontent among the lower classes.\n4. **Economic Inequality:** The economic privileges of the nobility and clergy contrasted sharply with the struggles of the common people, exacerbating tensions.\n\n#### Social Causes:\n1. **Rigid Social Hierarchy:** French society was divided into three estates:\n   - The First Estate (clergy) enjoyed privileges and exemptions.\n   - The Second Estate (nobility) had privileges, land, and political influence.\n   - The Third Estate (commoners), comprising about 98% of the population, had few rights and bore most of the tax burden.\n2. **Resentment of the Third Estate:** The bourgeoisie (middle class) within the Third Estate were educated and wealthy but lacked political power, leading to demands for social equality and political representation.\n3. **Enlightenment Ideas:** Enlightenment philosophers like Voltaire, Rousseau, and Montesquieu criticized absolute monarchy and promoted ideas of liberty, equality, and popular sovereignty, inspiring revolutionary thought.\n\n#### Political Causes:\n1. **Absolute Monarchy:** King Louis XVI ruled as an absolute monarch with unchecked power, which increasingly seemed outdated and ineffective.\n2. **Weak Leadership:** Louis XVI was indecisive and unable to manage the financial crisis or address the grievances of his subjects.\n3. **Estates-General and Political Deadlock:** In 1789, the king called the Estates-General (representatives of all three estates) to address the financial crisis. The Third Estate, frustrated with unequal representation, broke away and formed the National Assembly, signaling the start of a political revolution.\n4. **Demand for Political Representation:** The Third Estate sought a constitutional government with fair representation, challenging the traditional privileges of the nobility and clergy.\n\n---\n\n### Consequences of the French Revolution\n\n#### Political Consequences:\n1. **End of Absolute Monarchy:** The revolution led to the abolition of the monarchy and the establishment of a republic.\n2. **Rise of Republicanism and Democracy:** The Declaration of the Rights of Man and of the Citizen (1789) proclaimed freedom, equality before the law, and popular sovereignty.\n3. **Radicalization and Reign of Terror:** The revolution became more radical, culminating in the Reign of Terror (1793\u20131794) under Robespierre, where thousands were executed as enemies of the revolution.\n4. **Napoleonic Era:** The revolution ultimately paved the way for Napoleon Bonaparte\u2019s rise to power, who spread revolutionary ideals across Europe through his conquests.\n\n#### Social Consequences:\n1. **Abolition of Feudal Privileges:** Feudal dues and privileges of the nobility were abolished, and the old social hierarchy was dismantled.\n2. **Secularization:** The power of the Catholic Church was reduced; church lands were nationalized, and clergy became state employees.\n3. **Increased Social Mobility:** The revolution opened opportunities for the bourgeoisie and commoners to rise in social and political ranks based on merit rather than birth.\n4. **Emergence of Nationalism:** A new sense of national identity and citizenship developed.\n\n#### Economic Consequences:\n1. **Land Redistribution:** Church and noble lands were confiscated and sold to peasants and bourgeoisie, altering land ownership patterns.\n2. **Economic Instability:** The revolution caused short-term economic disruption due to war, internal conflict, and inflation.\n3. **Modernization:** Over time, the revolution helped create conditions for economic modernization and the development of capitalist economy in France.\n\n---\n\n### Summary\n\nThe French Revolution was caused by deep economic hardship, social inequality, and political mismanagement, fueled by Enlightenment ideas. Its consequences were profound: the overthrow of monarchy, the rise of republican ideals, social restructuring, and economic changes that laid the foundation for modern France and influenced global political thought.",
+    "input_chars": 113,
+    "output_chars": 4974,
+    "input_tokens": 26,
+    "output_tokens": 971,
+    "input_gzip": {
+      "original_bytes": 113,
+      "compressed_bytes": 110,
+      "compression_ratio": 1.0272727272727273,
+      "bits_per_byte": 7.787610619469026
+    },
+    "output_gzip": {
+      "original_bytes": 4980,
+      "compressed_bytes": 2145,
+      "compression_ratio": 2.3216783216783217,
+      "bits_per_byte": 3.4457831325301207
+    },
+    "output_mean_bits_per_token": 0.4395023568159997,
+    "output_total_bits": 426.7567884683355,
+    "output_bits_per_char": 0.08579750471820176
+  },
+  {
+    "level": 4,
+    "label": "technical_detail",
+    "input_text": "Explain the transformer architecture in detail, covering:\n1. Self-attention mechanism and how Q, K, V matrices are computed\n2. Multi-head attention and why it's beneficial\n3. Position encoding approaches (sinusoidal vs learned)\n4. The role of layer normalization and residual connections\n5. How the encoder-decoder structure works for sequence-to-sequence tasks",
+    "output_text": "Certainly! The Transformer architecture, introduced by Vaswani et al. in the seminal 2017 paper \"Attention is All You Need,\" revolutionized sequence modeling by relying primarily on attention mechanisms instead of recurrent or convolutional structures. Below is a detailed explanation covering the requested aspects.\n\n---\n\n## 1. Self-Attention Mechanism and Computation of Q, K, V Matrices\n\n### What is Self-Attention?\n\nSelf-attention is a mechanism that allows each position in an input sequence to attend to all other positions, enabling the model to capture dependencies regardless of their distance in the sequence.\n\n### How it Works\n\nGiven an input sequence represented as a matrix \\( X \\in \\mathbb{R}^{n \\times d_{model}} \\), where \\( n \\) is the sequence length and \\( d_{model} \\) the embedding dimension, self-attention computes a new representation of each token by weighting the contributions from other tokens.\n\n### Computing Q, K, V Matrices\n\nThe core idea is to project the input \\( X \\) into three different spaces:\n\n- Queries \\( Q = X W^Q \\)\n- Keys \\( K = X W^K \\)\n- Values \\( V = X W^V \\)\n\nwhere \\( W^Q, W^K, W^V \\in \\mathbb{R}^{d_{model} \\times d_k} \\) are learned parameter matrices, and \\( d_k \\) is the dimensionality of the queries and keys (often \\( d_k = d_{model}/h \\) where \\( h \\) is the number of attention heads).\n\n### Attention Scores\n\nThe attention scores are computed by:\n\n\\[\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{Q K^T}{\\sqrt{d_k}}\\right) V\n\\]\n\n- \\( Q K^T \\in \\mathbb{R}^{n \\times n} \\) computes dot products between each query and all keys.\n- Division by \\( \\sqrt{d_k} \\) is a scaling factor to prevent large dot-product values that could push softmax into regions with very small gradients.\n- Softmax normalizes the scores into probabilities.\n- Multiplying by \\( V \\) aggregates values weighted by attention weights.\n\n**Result:** Each position\u2019s output is a weighted sum of values from all positions, with weights determined by how similar the query at that position is to the keys.\n\n---\n\n## 2. Multi-Head Attention and Its Benefits\n\n### What is Multi-Head Attention?\n\nInstead of performing a single attention function with queries, keys, and values of dimension \\( d_k \\), the Transformer splits these into multiple \u201cheads,\u201d performs attention independently, and then concatenates the results.\n\nFormally, for \\( h \\) heads:\n\n\\[\n\\text{head}_i = \\text{Attention}(Q W_i^Q, K W_i^K, V W_i^V)\n\\]\n\nfor \\( i = 1, \\dots, h \\), where each \\( W_i^Q, W_i^K, W_i^V \\) are learned projections.\n\nThe outputs of all heads are concatenated and projected:\n\n\\[\n\\text{MultiHead}(Q,K,V) = \\text{Concat}(\\text{head}_1, \\dots, \\text{head}_h) W^O\n\\]\n\nwith \\( W^O \\in \\mathbb{R}^{h d_v \\times d_{model}} \\).\n\n### Benefits\n\n- **Capture Multiple Types of Relationships:** Different heads can learn to attend to different parts of the input or different linguistic phenomena (e.g., syntax, semantics).\n- **Improved Representation Power:** Each head operates in a different subspace, enabling richer representations.\n- **Parallelization:** Multiple heads operate simultaneously, making training efficient.\n\n---\n\n## 3. Position Encoding Approaches (Sinusoidal vs Learned)\n\nTransformers lack recurrence and convolution, so they have no inherent sense of token positions. To incorporate order information, positional encodings are added to input embeddings.\n\n### Sinusoidal Positional Encoding (Original Transformer)\n\nDefined by fixed functions of position \\( pos \\) and dimension \\( i \\):\n\n\\[\nPE_{(pos, 2i)} = \\sin\\left(\\frac{pos}{10000^{2i/d_{model}}}\\right)\n\\]\n\\[\nPE_{(pos, 2i+1)} = \\cos\\left(\\frac{pos}{10000^{2i/d_{model}}}\\right)\n\\]\n\n- **Advantages:**\n  - Fixed, no learned parameters.\n  - Allows the model to generalize to sequence lengths not seen during training.\n  - Encoding is continuous and smooth, so relative positions can be inferred.\n  \n### Learned Positional Encodings\n\n- A learned embedding matrix \\( P \\in \\mathbb{R}^{max\\_len \\times d_{model}} \\) is trained jointly with the model.\n- Positional embeddings are looked up and added to token embeddings.\n\n- **Advantages:**\n  - Potentially more flexible, letting the model learn task-specific position representations.\n- **Disadvantages:**\n  - Limited to max sequence length seen during training.\n  - May not generalize well to longer sequences.\n\nBoth approaches are widely used; learned embeddings often perform slightly better in practice but sinusoidal encodings are more interpretable and generalizable.\n\n---\n\n## 4. Role of Layer Normalization and Residual Connections\n\n### Residual Connections\n\nEach sub-layer (e.g., multi-head attention, feed-forward network) is wrapped with a residual (skip) connection:\n\n\\[\n\\text{Output} = \\text{Layer}(x) + x\n\\]\n\n- **Purpose:**\n  - Helps with gradient flow during backpropagation.\n  - Allows deeper networks to train effectively.\n  - Enables the model to learn perturbations over the identity function, stabilizing training.\n\n### Layer Normalization\n\nApplied after adding the residual connection:\n\n\\[\n\\text{LayerNorm}(x + \\text{Sublayer}(x))\n\\]\n\n- Normalizes inputs across the feature dimension.\n- Stabilizes activations and gradients.\n- Reduces covariate shift within layers.\n- Helps training converge faster and improves generalization.\n\nThis combination of residual connections + layer normalization is crucial to the stable and efficient training of Transformers.\n\n---\n\n## 5. Encoder-Decoder Structure for Sequence-to-Sequence Tasks\n\nThe Transformer is composed of two parts:\n\n### Encoder\n\n- Stack of \\( N \\) identical layers.\n- Each layer has:\n  - Multi-head self-attention sub-layer (attends over input sequence).\n  - Position-wise feed-forward network.\n- Takes input embeddings + positional encodings.\n- Outputs contextualized representations of the input sequence.\n\n### Decoder\n\n- Stack of \\( N \\) identical layers.\n- Each layer has:\n  - Masked multi-head self-attention to previous output tokens (prevents attending to future positions).\n  - Multi-head attention over encoder's output (encoder-decoder attention).\n  - Position-wise feed-forward network.\n- Takes previously generated tokens (shifted right) as input.\n- Generates the next token step-by-step during inference.\n\n### How it Works Together\n\n- The encoder transforms the entire source sequence into a sequence of continuous representations.\n- The decoder generates the target sequence token-by-token:\n  - At each step, it attends to both its own previous outputs (via masked self-attention) and the encoder outputs (via encoder-decoder attention).\n- This allows the decoder to condition on the full source context and the previously generated target tokens.\n\n---\n\n# **Summary**\n\n| Component                  | Purpose                                                     |\n|----------------------------|-------------------------------------------------------------|\n| **Self-Attention (Q,K,V)** | Compute weighted sums of input tokens to capture dependencies|\n| **Multi-Head Attention**    | Learn diverse relations by parallel attention mechanisms    |\n| **Positional Encoding**     | Inject order information into token embeddings              |\n| **Residual + LayerNorm**    | Facilitate training of deep networks, stabilize gradients   |\n| **Encoder-Decoder**         | Encode source sequence; decode target sequence conditioning on source and previous outputs |\n\nThis architecture enables efficient, parallelizable processing of sequences and has become foundational for NLP and beyond.\n\n---\n\nIf you'd like, I can provide mathematical derivations, code examples, or visual diagrams to further clarify any part!",
+    "input_chars": 361,
+    "output_chars": 7614,
+    "input_tokens": 81,
+    "output_tokens": 1723,
+    "input_gzip": {
+      "original_bytes": 361,
+      "compressed_bytes": 265,
+      "compression_ratio": 1.3622641509433961,
+      "bits_per_byte": 5.872576177285318
+    },
+    "output_gzip": {
+      "original_bytes": 7620,
+      "compressed_bytes": 3043,
+      "compression_ratio": 2.5041077883667433,
+      "bits_per_byte": 3.194750656167979
+    },
+    "output_mean_bits_per_token": 0.4656021824463428,
+    "output_total_bits": 802.2325603550491,
+    "output_bits_per_char": 0.10536282641910286
+  },
+  {
+    "level": 4,
+    "label": "analysis",
+    "input_text": "Analyze the following economic scenario and predict outcomes:\nA country with 3% GDP growth rate suddenly faces:\n- 15% tariff on all imports\n- Central bank raises interest rates by 200 basis points\n- Major trading partner enters recession\n- Domestic tech sector growing at 25% annually\n- Unemployment at 4.2%\n- Government debt-to-GDP ratio of 85%\nDiscuss likely impacts on inflation, employment, trade balance, and currency value over the next 12-24 months.",
+    "output_text": "Let's analyze the scenario step-by-step and predict likely outcomes for **inflation, employment, trade balance, and currency value** over the next 12-24 months.\n\n---\n\n### Baseline Context:\n- GDP growth: 3% (moderate positive growth)\n- Unemployment: 4.2% (near full employment)\n- Government debt/GDP: 85% (relatively high, but not necessarily critical)\n- Domestic tech sector: growing rapidly at 25% annually (a strong growth driver)\n- Major trading partner recession (external demand shock)\n\n---\n\n## 1. **15% Tariff on All Imports**\n\n**Impacts:**\n- **Inflation:** Likely to increase import prices, causing cost-push inflation, especially on goods reliant on imports. Consumer prices may rise, pushing headline inflation higher.\n- **Trade Balance:** Import volumes likely to decrease due to higher prices, improving the trade balance (lower imports). However, if exports decrease due to partner recession, net effect depends on export sensitivity.\n- **Employment:** Import-competing industries may expand, potentially increasing employment in those sectors, but overall impact depends on export sector performance.\n- **Currency:** Tariffs could be perceived as protectionist, possibly reducing foreign investor confidence and putting downward pressure on the currency.\n\n---\n\n## 2. **Central Bank Raises Interest Rates by 200 Basis Points**\n\n**Impacts:**\n- **Inflation:** A strong monetary tightening signal aimed at curbing inflation. Higher borrowing costs reduce consumer spending and investment, tempering demand-pull inflation.\n- **Employment:** Slower economic activity from higher rates may reduce hiring or increase layoffs, pushing unemployment slightly higher over time.\n- **Trade Balance:** Higher interest rates attract foreign capital, potentially strengthening the currency, which could make exports less competitive but reduce import costs.\n- **Currency:** Likely appreciation due to higher yields attracting capital inflows.\n\n---\n\n## 3. **Major Trading Partner Enters Recession**\n\n**Impacts:**\n- **Inflation:** Reduced external demand may ease inflationary pressures from export side.\n- **Employment:** Export-oriented sectors will likely suffer, potentially leading to layoffs or slower hiring.\n- **Trade Balance:** Exports decline, worsening trade balance unless import contraction offsets this.\n- **Currency:** Reduced exports and foreign investment from the partner may weaken the currency.\n\n---\n\n## 4. **Domestic Tech Sector Growing at 25% Annually**\n\n**Impacts:**\n- **Inflation:** Tech sector growth may increase wages and prices in that sector but may have limited direct impact on broad inflation.\n- **Employment:** Strong growth in tech can absorb displaced workers from other sectors and contribute to overall employment stability or growth.\n- **Trade Balance:** If tech exports are significant, this can partially offset export losses from the partner\u2019s recession.\n- **Currency:** High-growth sector attracts foreign investment, supporting currency strength.\n\n---\n\n## 5. **Unemployment at 4.2%**\n\n- Near full employment implies limited slack in labor markets, which usually supports wage growth and inflation.\n- With monetary tightening and external shocks, unemployment may rise modestly but could be cushioned by tech sector growth.\n\n---\n\n## 6. **Government Debt-to-GDP Ratio of 85%**\n\n- Relatively high debt limits fiscal stimulus options.\n- May contribute to cautious investor sentiment, especially combined with tariffs and external shocks.\n\n---\n\n# **Summary of Likely Outcomes Over 12-24 Months**\n\n| Variable       | Likely Impact & Explanation                                  |\n|----------------|--------------------------------------------------------------|\n| **Inflation**  | Initially upward pressure due to tariffs and tight labor market; monetary tightening should moderate inflation over time, but imported inflation and supply constraints may keep inflation above target. |\n| **Employment** | Slight increase in unemployment expected due to export recession and higher rates; tech sector growth may offset losses, keeping unemployment relatively stable (perhaps moving from 4.2% to ~4.5-5%). |\n| **Trade Balance** | Mixed effects: tariffs reduce imports improving trade balance, but export decline from partner recession worsens it. Net effect uncertain but possibly a modest improvement or stable trade balance. |\n| **Currency Value** | Mixed pressures: higher interest rates and tech growth support currency appreciation; tariffs and partner recession exert downward pressure. Net effect could be moderate appreciation or volatility. |\n\n---\n\n# **Additional Considerations**\n\n- **Inflation expectations**: If the public expects persistent inflation, wage-price spirals could develop despite rate hikes.\n- **Sectoral shifts**: Import substitution may benefit domestic manufacturing but hurt consumers.\n- **Monetary policy**: Further rate hikes or loosening depend on inflation and growth trajectory.\n- **Fiscal policy**: Limited room due to high debt, so little offsetting stimulus likely.\n\n---\n\n# **Conclusion**\n\nThe economy will face **inflationary pressures initially**, driven by tariffs and tight labor markets, but the **central bank\u2019s rate hikes aim to moderate inflation**. Employment may weaken slightly due to external recession and tighter monetary conditions, but **strong tech sector growth acts as a stabilizer**. Trade balance impact is ambiguous, with tariffs reducing imports but exports falling due to partner recession. Currency value may experience volatility but with a slight tilt toward appreciation from higher rates and tech sector strength.\n\n---\n\nIf you want, I can also provide a quantitative forecast or scenario-based simulations for these variables.",
+    "input_chars": 456,
+    "output_chars": 5720,
+    "input_tokens": 110,
+    "output_tokens": 1090,
+    "input_gzip": {
+      "original_bytes": 456,
+      "compressed_bytes": 318,
+      "compression_ratio": 1.4339622641509433,
+      "bits_per_byte": 5.578947368421052
+    },
+    "output_gzip": {
+      "original_bytes": 5724,
+      "compressed_bytes": 2295,
+      "compression_ratio": 2.4941176470588236,
+      "bits_per_byte": 3.207547169811321
+    },
+    "output_mean_bits_per_token": 0.707410343968999,
+    "output_total_bits": 771.0772749262077,
+    "output_bits_per_char": 0.13480371939269364
+  },
+  {
+    "level": 5,
+    "label": "data_analysis",
+    "input_text": "Given the following experimental data, perform a statistical analysis:\n\nGroup A (treatment): 23.4, 25.1, 22.8, 26.3, 24.7, 23.9, 25.5, 24.1, 26.0, 23.2,\n                      25.8, 24.3, 22.5, 26.7, 24.9, 23.6, 25.2, 24.8, 26.1, 23.0\nGroup B (control):   20.1, 21.5, 19.8, 22.3, 20.7, 21.2, 19.5, 22.0, 20.3, 21.8,\n                     19.2, 22.5, 20.9, 21.0, 19.7, 22.1, 20.5, 21.3, 19.9, 22.4\n\n1. Calculate mean, standard deviation, and 95% CI for each group\n2. Perform an independent samples t-test\n3. Calculate Cohen's d effect size\n4. Assess normality assumptions\n5. Interpret the results in context of a clinical trial",
+    "output_text": "Let's analyze the given data step-by-step.\n\n---\n\n### Data\n\n**Group A (treatment):**  \n23.4, 25.1, 22.8, 26.3, 24.7, 23.9, 25.5, 24.1, 26.0, 23.2,  \n25.8, 24.3, 22.5, 26.7, 24.9, 23.6, 25.2, 24.8, 26.1, 23.0  \n\n**Group B (control):**  \n20.1, 21.5, 19.8, 22.3, 20.7, 21.2, 19.5, 22.0, 20.3, 21.8,  \n19.2, 22.5, 20.9, 21.0, 19.7, 22.1, 20.5, 21.3, 19.9, 22.4\n\n---\n\n## 1. Calculate mean, standard deviation, and 95% CI for each group\n\nLet's start with **Group A**.\n\n- n = 20\n\nCalculate mean (\\(\\bar{x}\\)):\n\n\\[\n\\bar{x}_A = \\frac{\\sum x_i}{n}\n\\]\n\nSum of Group A:\n\n\\[\n23.4 + 25.1 + 22.8 + 26.3 + 24.7 + 23.9 + 25.5 + 24.1 + 26.0 + 23.2 + 25.8 + 24.3 + 22.5 + 26.7 + 24.9 + 23.6 + 25.2 + 24.8 + 26.1 + 23.0 = ?\n\\]\n\nCalculate sum:\n\n\\[\n23.4 + 25.1 = 48.5 \\\\\n48.5 + 22.8 = 71.3 \\\\\n71.3 + 26.3 = 97.6 \\\\\n97.6 + 24.7 = 122.3 \\\\\n122.3 + 23.9 = 146.2 \\\\\n146.2 + 25.5 = 171.7 \\\\\n171.7 + 24.1 = 195.8 \\\\\n195.8 + 26.0 = 221.8 \\\\\n221.8 + 23.2 = 245.0 \\\\\n245.0 + 25.8 = 270.8 \\\\\n270.8 + 24.3 = 295.1 \\\\\n295.1 + 22.5 = 317.6 \\\\\n317.6 + 26.7 = 344.3 \\\\\n344.3 + 24.9 = 369.2 \\\\\n369.2 + 23.6 = 392.8 \\\\\n392.8 + 25.2 = 418.0 \\\\\n418.0 + 24.8 = 442.8 \\\\\n442.8 + 26.1 = 468.9 \\\\\n468.9 + 23.0 = 491.9\n\\]\n\nWait, I missed some terms. Let me count again:\n\n1) 23.4  \n2) 25.1  \n3) 22.8  \n4) 26.3  \n5) 24.7  \n6) 23.9  \n7) 25.5  \n8) 24.1  \n9) 26.0  \n10) 23.2  \n11) 25.8  \n12) 24.3  \n13) 22.5  \n14) 26.7  \n15) 24.9  \n16) 23.6  \n17) 25.2  \n18) 24.8  \n19) 26.1  \n20) 23.0\n\nSum:\n\n23.4 + 25.1 = 48.5  \n48.5 + 22.8 = 71.3  \n71.3 + 26.3 = 97.6  \n97.6 + 24.7 = 122.3  \n122.3 + 23.9 = 146.2  \n146.2 + 25.5 = 171.7  \n171.7 + 24.1 = 195.8  \n195.8 + 26.0 = 221.8  \n221.8 + 23.2 = 245.0  \n245.0 + 25.8 = 270.8  \n270.8 + 24.3 = 295.1  \n295.1 + 22.5 = 317.6  \n317.6 + 26.7 = 344.3  \n344.3 + 24.9 = 369.2  \n369.2 + 23.6 = 392.8  \n392.8 + 25.2 = 418.0  \n418.0 + 24.8 = 442.8  \n442.8 + 26.1 = 468.9  \n468.9 + 23.0 = 491.9\n\nSum = 491.9\n\nMean:\n\n\\[\n\\bar{x}_A = \\frac{491.9}{20} = 24.595\n\\]\n\n---\n\nCalculate standard deviation \\(s\\):\n\n\\[\ns = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n-1}}\n\\]\n\nCalculate squared deviations:\n\n| \\(x_i\\) | \\(x_i - \\bar{x}_A\\) | \\((x_i - \\bar{x}_A)^2\\) |\n|---------|---------------------|-------------------------|\n| 23.4    | 23.4 - 24.595 = -1.195 | 1.428                  |\n| 25.1    | 0.505               | 0.255                   |\n| 22.8    | -1.795              | 3.222                   |\n| 26.3    | 1.705               | 2.907                   |\n| 24.7    | 0.105               | 0.011                   |\n| 23.9    | -0.695              | 0.483                   |\n| 25.5    | 0.905               | 0.819                   |\n| 24.1    | -0.495              | 0.245                   |\n| 26.0    | 1.405               | 1.975                   |\n| 23.2    | -1.395              | 1.947                   |\n| 25.8    | 1.205               | 1.452                   |\n| 24.3    | -0.295              | 0.087                   |\n| 22.5    | -2.095              | 4.390                   |\n| 26.7    | 2.105               | 4.432                   |\n| 24.9    | 0.305               | 0.093                   |\n| 23.6    | -0.995              | 0.990                   |\n| 25.2    | 0.605               | 0.366                   |\n| 24.8    | 0.205               | 0.042                   |\n| 26.1    | 1.505               | 2.265                   |\n| 23.0    | -1.595              | 2.544                   |\n\nSum of squared deviations:\n\n\\[\n1.428 + 0.255 + 3.222 + 2.907 + 0.011 + 0.483 + 0.819 + 0.245 + 1.975 + 1.947 + 1.452 + 0.087 + 4.390 + 4.432 + 0.093 + 0.990 + 0.366 + 0.042 + 2.265 + 2.544\n\\]\n\nCalculate sum:\n\n1.428 + 0.255 = 1.683  \n1.683 + 3.222 = 4.905  \n4.905 + 2.907 = 7.812  \n7.812 + 0.011 = 7.823  \n7.823 + 0.483 = 8.306  \n8.306 + 0.819 = 9.125  \n9.125 + 0.245 = 9.370  \n9.370 + 1.975 = 11.345  \n11.345 + 1.947 = 13.292  \n13.292 + 1.452 = 14.744  \n14.744 + 0.087 = 14.831  \n14.831 + 4.390 = 19.221  \n19.221 + 4.432 = 23.653  \n23.653 + 0.093 = 23.746  \n23.746 + 0.990 = 24.736  \n24.736 + 0.366 = 25.102  \n25.102 + 0.042 = 25.144  \n25.144 + 2.265 = 27.409  \n27.409 + 2.544 = 29.953\n\nSum of squared deviations = 29.953\n\nStandard deviation:\n\n\\[\ns_A = \\sqrt{\\frac{29.953}{19}} = \\sqrt{1.576} \\approx 1.255\n\\]\n\n---\n\nCalculate 95% confidence interval (CI)",
+    "input_chars": 624,
+    "output_chars": 4237,
+    "input_tokens": 285,
+    "output_tokens": 2048,
+    "input_gzip": {
+      "original_bytes": 624,
+      "compressed_bytes": 370,
+      "compression_ratio": 1.6864864864864866,
+      "bits_per_byte": 4.743589743589744
+    },
+    "output_gzip": {
+      "original_bytes": 4237,
+      "compressed_bytes": 1417,
+      "compression_ratio": 2.990119971771348,
+      "bits_per_byte": 2.67547793249941
+    },
+    "output_mean_bits_per_token": 0.06570136549235543,
+    "output_total_bits": 134.5563965283444,
+    "output_bits_per_char": 0.03175746908858731
+  },
+  {
+    "level": 5,
+    "label": "code_generation",
+    "input_text": "Write a Python implementation of a B-tree with the following specifications:\n- Order m=5 (max 4 keys per node, max 5 children)\n- Support insert, search, and delete operations\n- Include node splitting logic for overflow\n- Include node merging/redistribution for underflow during deletion\n- Add a pretty-print method that shows the tree structure\n- Include comprehensive docstrings\n- Add at least 5 unit tests demonstrating correctness\n- Handle edge cases: empty tree, single element, duplicate keys",
+    "output_text": "```python\nfrom typing import List, Optional, Tuple\n\n\nclass BTreeNode:\n    \"\"\"\n    Node of a B-tree.\n\n    Attributes:\n        keys (List[int]): List of keys in the node (sorted).\n        children (List[Optional[BTreeNode]]): List of children nodes.\n        leaf (bool): True if the node is a leaf.\n    \"\"\"\n\n    def __init__(self, leaf: bool):\n        \"\"\"\n        Initialize a B-tree node.\n\n        Args:\n            leaf (bool): True if the node is leaf node.\n        \"\"\"\n        self.leaf = leaf\n        self.keys: List[int] = []\n        self.children: List[Optional[BTreeNode]] = []\n\n    def __str__(self):\n        return f\"Keys:{self.keys}, Leaf:{self.leaf}\"\n\n\nclass BTree:\n    \"\"\"\n    B-tree implementation with order m=5 (max 4 keys per node).\n\n    Supports insert, search, delete operations with rebalancing.\n\n    Attributes:\n        t (int): Minimum degree (t = ceil(m/2) = 3 for m=5).\n        root (Optional[BTreeNode]): Root node of the B-tree.\n    \"\"\"\n\n    def __init__(self):\n        \"\"\"\n        Initialize an empty B-tree.\n        \"\"\"\n        self.t = 3  # Minimum degree t = ceil(m/2), m=5 => t=3\n        self.root: Optional[BTreeNode] = None\n\n    def search(self, k: int, node: Optional[BTreeNode] = None) -> Optional[Tuple[BTreeNode, int]]:\n        \"\"\"\n        Search key k in the B-tree starting from node.\n\n        Args:\n            k (int): Key to search.\n            node (Optional[BTreeNode]): Node to start the search from. Defaults to root.\n\n        Returns:\n            Optional[Tuple[BTreeNode, int]]: Tuple of (node, index) if found, else None.\n        \"\"\"\n        if node is None:\n            node = self.root\n        if node is None:\n            return None\n\n        # Find the first key >= k\n        i = 0\n        while i < len(node.keys) and k > node.keys[i]:\n            i += 1\n\n        if i < len(node.keys) and k == node.keys[i]:\n            return node, i\n\n        if node.leaf:\n            return None\n        else:\n            return self.search(k, node.children[i])\n\n    def insert(self, k: int) -> bool:\n        \"\"\"\n        Insert key k into the B-tree. Does not allow duplicates.\n\n        Args:\n            k (int): Key to insert.\n\n        Returns:\n            bool: True if inserted, False if duplicate.\n        \"\"\"\n        if self.root is None:\n            # Tree empty, create root\n            self.root = BTreeNode(leaf=True)\n            self.root.keys.append(k)\n            return True\n\n        # Check for duplicate\n        if self.search(k) is not None:\n            return False  # Duplicate key, do not insert\n\n        r = self.root\n        if len(r.keys) == 2 * self.t - 1:\n            # Root full, need to split\n            s = BTreeNode(leaf=False)\n            s.children.append(r)\n            self._split_child(s, 0)\n            self.root = s\n            self._insert_non_full(s, k)\n        else:\n            self._insert_non_full(r, k)\n        return True\n\n    def _insert_non_full(self, node: BTreeNode, k: int):\n        \"\"\"\n        Insert key k into a non-full node.\n\n        Args:\n            node (BTreeNode): Node guaranteed to be non-full.\n            k (int): Key to insert.\n        \"\"\"\n        i = len(node.keys) - 1\n        if node.leaf:\n            # Insert key into leaf node at correct position\n            node.keys.append(0)\n            while i >= 0 and k < node.keys[i]:\n                node.keys[i + 1] = node.keys[i]\n                i -= 1\n            node.keys[i + 1] = k\n        else:\n            # Move down to the correct child\n            while i >= 0 and k < node.keys[i]:\n                i -= 1\n            i += 1\n            if len(node.children[i].keys) == 2 * self.t - 1:\n                self._split_child(node, i)\n                if k > node.keys[i]:\n                    i += 1\n            self._insert_non_full(node.children[i], k)\n\n    def _split_child(self, parent: BTreeNode, i: int):\n        \"\"\"\n        Split child node of parent at index i.\n\n        Args:\n            parent (BTreeNode): Parent node.\n            i (int): Index of child to split.\n        \"\"\"\n        t = self.t\n        y = parent.children[i]\n        z = BTreeNode(y.leaf)\n\n        # z takes last t-1 keys from y\n        z.keys = y.keys[t:]\n        y.keys = y.keys[:t - 1]\n\n        if not y.leaf:\n            z.children = y.children[t:]\n            y.children = y.children[:t]\n\n        parent.children.insert(i + 1, z)\n        parent.keys.insert(i, y.keys.pop(-1))  # Middle key moves up\n\n    def delete(self, k: int) -> bool:\n        \"\"\"\n        Delete key k from the B-tree.\n\n        Args:\n            k (int): Key to delete.\n\n        Returns:\n            bool: True if deleted, False if not found.\n        \"\"\"\n        if self.root is None:\n            return False\n\n        deleted = self._delete(self.root, k)\n\n        # Shrink height if root has no keys\n        if self.root and len(self.root.keys) == 0:\n            if self.root.leaf:\n                self.root = None\n            else:\n                self.root = self.root.children[0]\n        return deleted\n\n    def _delete(self, node: BTreeNode, k: int) -> bool:\n        \"\"\"\n        Delete key k from subtree rooted with node.\n\n        Args:\n            node (BTreeNode): Root of subtree.\n            k (int): Key to delete.\n\n        Returns:\n            bool: True if deleted, False if not found.\n        \"\"\"\n        t = self.t\n        i = 0\n        while i < len(node.keys) and k > node.keys[i]:\n            i += 1\n\n        if i < len(node.keys) and k == node.keys[i]:\n            if node.leaf:\n                # Case 1: key in leaf node\n                node.keys.pop(i)\n                return True\n            else:\n                # Case 2: key in internal node\n                return self._delete_internal_node(node, k, i)\n        else:\n            # Key not found in node\n            if node.leaf:\n                return False  # Not found\n            else:\n                # Ensure the child where key might exist has at least t keys\n                flag = (i == len(node.keys))\n                if len(node.children[i].keys) < t:\n                    self._fill(node, i)\n                # After fill, if last child merged, recurse on i-1 else on i\n                if flag and i > len(node.keys):\n                    return self._delete(node.children[i - 1], k)\n                else:\n                    return self._delete(node.children[i], k)\n\n    def _delete_internal_node(self, node: BTreeNode, k: int, idx: int) -> bool:\n        \"\"\"\n        Delete key k from internal node at index idx.\n\n        Args:\n            node (BTreeNode): Node containing key.\n            k (int): Key to delete.\n            idx (int): Index of key k in node.keys.\n\n        Returns:\n            bool: True if deleted.\n        \"\"\"\n        t = self.t\n        pred_child = node.children[idx]\n        succ_child = node.children[idx + 1]\n\n        if len(pred_child.keys) >= t:\n            pred_key = self._get_predecessor(pred_child)\n            node.keys[idx] = pred_key\n            return self._delete(pred_child, pred_key)\n        elif len(succ_child.keys) >= t:\n            succ_key = self._get_successor(succ_child)\n            node.keys[idx] = succ_key\n            return self._delete(succ_child, succ_key)\n        else:\n            self._merge(node, idx)\n            return self._delete(pred_child, k)\n\n    def _get_predecessor(self, node: BTreeNode) -> int:\n        \"\"\"\n        Get predecessor key in subtree rooted at node.\n\n        Args:\n            node (BTreeNode): Subtree root.\n\n        Returns:\n            int: Predecessor key.\n        \"\"\"\n        current = node\n        while not current.leaf:\n            current = current.children[-1]\n        return current.keys[-1]\n\n    def _get_successor(self, node: BTreeNode) -> int:\n        \"\"\"\n        Get successor key in subtree rooted at node.\n\n        Args:\n            node (BTreeNode): Subtree root.\n\n        Returns:\n            int: Successor key.\n        \"\"\"\n        current = node\n        while not current.leaf:\n            current = current.children[0]\n        return current.keys[0]\n\n    def _fill(self, node: BTreeNode, idx: int):\n        \"\"\"\n        Ensure that the child node.children[idx] has at least t keys.\n\n        Args:\n            node (BTreeNode): Parent node.\n            idx (int): Index of child in children list.\n        \"\"\"\n        t = self.t\n        if idx != 0 and len(node.children[idx - 1].keys) >= t:\n            self._borrow_from_prev(node, idx)\n        elif idx != len(node.children) - 1 and len(node.children[idx + 1].keys) >= t:\n            self._",
+    "input_chars": 497,
+    "output_chars": 8535,
+    "input_tokens": 111,
+    "output_tokens": 2048,
+    "input_gzip": {
+      "original_bytes": 497,
+      "compressed_bytes": 322,
+      "compression_ratio": 1.5434782608695652,
+      "bits_per_byte": 5.183098591549296
+    },
+    "output_gzip": {
+      "original_bytes": 8535,
+      "compressed_bytes": 2042,
+      "compression_ratio": 4.179725759059745,
+      "bits_per_byte": 1.914001171646163
+    },
+    "output_mean_bits_per_token": 0.12865027285071595,
+    "output_total_bits": 263.4757587982666,
+    "output_bits_per_char": 0.030870036180230417
+  },
+  {
+    "level": 6,
+    "label": "multi_domain",
+    "input_text": "You are a consultant preparing a comprehensive report. Address ALL of the following:\n\nSECTION 1 - TECHNICAL ARCHITECTURE:\nDesign a microservices architecture for a real-time trading platform that handles 100,000 orders/second. Specify: service decomposition, communication protocols (gRPC vs REST vs message queues), database choices (SQL vs NoSQL for different services), caching strategy (Redis vs Memcached), and deployment on Kubernetes with auto-scaling policies.\n\nSECTION 2 - MATHEMATICAL MODELING:\nThe platform needs a risk assessment engine. Define a Value-at-Risk (VaR) model using:\n- Historical simulation with 1000-day lookback\n- Monte Carlo simulation with 10,000 paths\n- Parametric VaR assuming normal and t-distributed returns\nCompare the three approaches mathematically and discuss when each is most appropriate.\n\nSECTION 3 - REGULATORY COMPLIANCE:\nOutline compliance requirements for: MiFID II (EU), Dodd-Frank (US), and MAS regulations (Singapore). How does the architecture need to adapt for: trade reporting, best execution obligations, position limits, and data residency requirements?\n\nSECTION 4 - PERFORMANCE OPTIMIZATION:\nThe matching engine must achieve <50\u03bcs latency. Discuss: kernel bypass networking (DPDK/RDMA), lock-free data structures for the order book, CPU cache optimization, NUMA-aware memory allocation, and the trade-offs of using FPGA vs software for matching.\n\nProvide concrete numbers, formulas, and code snippets where appropriate.",
+    "output_text": "Certainly! Below is a comprehensive and detailed report addressing all four sections as requested.\n\n---\n\n# Comprehensive Report: Real-Time Trading Platform Design and Analysis\n\n---\n\n## SECTION 1 - TECHNICAL ARCHITECTURE\n\n### 1.1 Service Decomposition\n\nTo handle **100,000 orders/second** with scalability and fault isolation, the platform should be decomposed into the following microservices:\n\n| Service                  | Responsibility                                      |\n|--------------------------|---------------------------------------------------|\n| **Order Gateway**        | API ingress, validation, authentication            |\n| **Order Management Service (OMS)** | Order lifecycle management, state persistence      |\n| **Matching Engine**      | Core order matching, trade execution                |\n| **Risk Assessment Engine** | Real-time risk checks and limits enforcement       |\n| **Market Data Service**  | Provides market data feeds, price ticks             |\n| **Position Management**  | Tracks positions and P&L per client                  |\n| **Trade Reporting Service** | Regulatory reporting and audit trail generation    |\n| **Notification Service** | Alerts, confirmations, and notifications             |\n| **User Management Service** | Authentication, authorization, KYC data             |\n\n### 1.2 Communication Protocols\n\n- **Internal service-to-service communication:**\n\n  Use **gRPC** for low-latency, high-throughput communication with efficient Protobuf serialization.\n\n  - Justification: gRPC supports multiplexing over HTTP/2, bi-directional streaming (necessary for real-time updates), and has better performance than REST JSON.\n\n- **External client-facing APIs:**\n\n  Use **REST** over HTTPS for client compatibility.\n\n- **Event-driven communication:**\n\n  Use **message queues** (e.g., Apache Kafka or RabbitMQ) for asynchronous events such as trade confirmations, risk alerts, and market data distribution.\n\n  - Kafka preferred for high throughput and durability.\n  \n### 1.3 Database Choices\n\n| Service                 | Data Type                  | Recommended DB            | Reasoning                                                  |\n|-------------------------|----------------------------|--------------------------|------------------------------------------------------------|\n| OMS & Position Management| Transactional order data   | **Relational DB (PostgreSQL, CockroachDB)** | ACID compliance, complex queries, strong consistency        |\n| Market Data Service      | Time-series price data     | **NoSQL TSDB (TimescaleDB or InfluxDB)**   | Optimized for time-series, high write rate, compression     |\n| Risk Assessment Engine   | Historical data + models   | **NoSQL (MongoDB, Cassandra)**              | Flexible schema, fast reads for complex risk computations   |\n| Trade Reporting          | Audit logs                 | **Relational DB or Immutable Ledger DB (e.g., Apache Iceberg)** | Regulatory audit, immutable records                          |\n| Caching Layer           | Frequently accessed data   | **Redis**                                   | Supports advanced data structures, pub/sub, persistence     |\n\n**Notes:**\n\n- **SQL** databases are preferred where ACID and complex transactional integrity are critical (OMS, positions).\n- **NoSQL** for flexible, scalable storage of large volumes of time-series and semi-structured data.\n\n### 1.4 Caching Strategy\n\n- Use **Redis** over Memcached because:\n\n  - Redis supports persistence, complex data types (sorted sets, hashes), Lua scripting for atomic operations.\n  - Redis Pub/Sub for real-time notifications.\n  - Memcached is simpler but lacks persistence and advanced features.\n\n- Cache hot data such as:\n\n  - Order book snapshots\n  - Market data ticks\n  - Client session info\n\n- Implement Redis clustering for horizontal scaling.\n\n### 1.5 Kubernetes Deployment & Auto-scaling\n\n- Deploy all microservices as **containerized pods** in Kubernetes.\n\n- Use **Horizontal Pod Autoscaler (HPA)** based on:\n\n  - CPU utilization threshold (e.g., >70%)\n  - Custom metrics (orders per second, queue length)\n\n- For the **Matching Engine**, use **Vertical Pod Autoscaler (VPA)** or dedicated nodes with guaranteed CPU and memory.\n\n- Use **Node Pools** with specialized hardware (e.g., nodes with RDMA or FPGA cards) for low-latency services.\n\n- Use **StatefulSets** for databases and cache clusters.\n\n- Implement **PodDisruptionBudgets** to ensure minimal downtime during upgrades.\n\n---\n\n## SECTION 2 - MATHEMATICAL MODELING: Value-at-Risk (VaR) Models\n\n### 2.1 Definitions\n\nValue-at-Risk (VaR) estimates the maximum loss over a given time horizon at a specified confidence level (e.g., 95%, 99%).\n\nMathematically:\n\n\\[\n\\text{VaR}_{\\alpha} = \\inf \\{ l \\in \\mathbb{R} : P(L \\le l) \\ge \\alpha \\}\n\\]\n\nwhere \\( L \\) is loss, and \\( \\alpha \\) the confidence level.\n\n---\n\n### 2.2 Historical Simulation VaR\n\n- **Method:**\n\n  Use historical returns over the last 1000 trading days.\n\n- **Process:**\n\n  1. Collect portfolio returns \\( r_1, r_2, ..., r_{1000} \\).\n  2. Sort returns ascending.\n  3. VaR at confidence level \\( \\alpha \\) is the \\( (1-\\alpha) \\times 1000 \\)-th percentile loss.\n\n- **Formula:**\n\n\\[\n\\text{VaR}^{HS}_{\\alpha} = - r_{(\\lceil (1-\\alpha)*N \\rceil)}\n\\]\n\nwhere \\( N=1000 \\).\n\n- **Pros:**\n\n  - Non-parametric: no assumptions about distribution.\n  - Captures empirical fat tails, skewness.\n\n- **Cons:**\n\n  - Assumes history is representative of future.\n  - Sensitive to window size.\n\n---\n\n### 2.3 Monte Carlo Simulation VaR\n\n- **Method:**\n\n  Simulate \\( M=10,000 \\) possible portfolio value paths based on stochastic models.\n\n- **Process:**\n\n  1. Model underlying risk factors (e.g., returns) with chosen distribution.\n  2. Simulate \\( M \\) paths of returns \\( r^{(m)} \\).\n  3. Compute portfolio losses \\( L^{(m)} \\).\n  4. VaR is \\( (1-\\alpha) \\)-quantile of simulated losses.\n\n- **Formula:**\n\n\\[\n\\text{VaR}^{MC}_{\\alpha} = \\inf \\{ l : \\frac{1}{M} \\sum_{m=1}^M \\mathbf{1}_{L^{(m)} \\le l} \\ge \\alpha \\}\n\\]\n\n- **Pros:**\n\n  - Flexible, can model complex dependencies and non-linear instruments.\n  - Incorporates scenario analysis.\n\n- **Cons:**\n\n  - Computationally expensive.\n  - Requires accurate model calibration.\n\n---\n\n### 2.4 Parametric VaR (Normal and t-distributions)\n\n- **Assumptions:**\n\n  Portfolio returns \\( R \\) are normally or t-distributed.\n\n- **Normal VaR:**\n\n\\[\n\\text{VaR}^{N}_{\\alpha} = \\mu + \\sigma \\Phi^{-1}(\\alpha)\n\\]\n\nwhere \\(\\mu\\) = mean return, \\(\\sigma\\) = std dev, \\(\\Phi^{-1}\\) = inverse CDF of standard normal.\n\n- **t-distribution VaR:**\n\n\\[\n\\text{VaR}^{t}_{\\alpha} = \\mu + \\sigma t_{\\nu}^{-1}(\\alpha)\n\\]\n\nwhere \\( t_{\\nu}^{-1} \\) is inverse CDF of Student's t with \\(\\nu\\) degrees of freedom (captures fat tails).\n\n- **Pros:**\n\n  - Fast and simple.\n  - Parametric formulas.\n\n- **Cons:**\n\n  - Assumes returns distribution form.\n  - May underestimate tail risk (normal).\n  - t-distribution better for fat tails but more complex.\n\n---\n\n### 2.5 Comparison and Use Cases\n\n| Method                 | Computational Cost | Tail Behavior Capture | Model Assumptions        | Best Use Case                                |\n|------------------------|--------------------|----------------------|-------------------------|----------------------------------------------|\n| Historical Simulation  | Low                | Empirical            | None (uses past data)    | Stable markets, limited model assumptions     |\n| Monte Carlo Simulation | High               | Flexible             | Model-dependent          | Complex portfolios, derivatives, stress testing |\n| Parametric VaR (Normal)| Very Low           | Poor (thin tails)    | Normal returns           | Quick, approximate calculations               |\n| Parametric VaR (t)     | Low                | Good (fat tails)     | t-distributed returns    | When fat tails observed, but parametric needed |\n\n---\n\n## SECTION 3 - REGULATORY COMPLIANCE\n\n### 3.1 Overview of Regulations\n\n| Regulation | Scope                           | Key Requirements                              |\n|------------|--------------------------------|-----------------------------------------------|\n| **MiFID II (EU)** | Investment firms in EU        | Trade transparency, best execution, position limits, data retention |\n| **Dodd-Frank (US)** | US derivatives and securities | Trade reporting, clearing, position limits, recordkeeping |\n| **MAS (Singapore)** | Financial institutions in SG   | Trade reporting, risk management, data residency |\n\n---\n\n### 3.2 Compliance Requirements & Architectural Adaptations\n\n| Requirement           | MiFID II                         | Dodd-Frank                      | MAS                         | Architecture Adaptations                                                      |\n|-----------------------|---------------------------------|--------------------------------|-----------------------------|-------------------------------------------------------------------------------|\n| **Trade Reporting**   | Near real-time reporting to regulators (e.g., ESMA) | Timely reporting to swap data repositories (SDRs) | Reporting to MAS, timely audit logs | Central **Trade Reporting Service** with immutable logs, encryption, and API integrations |\n| **Best Execution**    | Demonstrate execution",
+    "input_chars": 1472,
+    "output_chars": 9285,
+    "input_tokens": 314,
+    "output_tokens": 2048,
+    "input_gzip": {
+      "original_bytes": 1473,
+      "compressed_bytes": 903,
+      "compression_ratio": 1.6312292358803986,
+      "bits_per_byte": 4.904276985743381
+    },
+    "output_gzip": {
+      "original_bytes": 9285,
+      "compressed_bytes": 3627,
+      "compression_ratio": 2.5599669148056243,
+      "bits_per_byte": 3.1250403877221324
+    },
+    "output_mean_bits_per_token": 21.690318913931677,
+    "output_total_bits": 44421.77313573207,
+    "output_bits_per_char": 4.784251280100385
+  }
+]

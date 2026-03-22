@@ -1,0 +1,128 @@
+[
+  {
+    "type": "random_chars",
+    "input_text": "NbrnTP3fAbnFbmOHnKYaXRvj7uff0LYTH8xIZM1JRcoreogrNwwmq6OLkTkx9NIQ0Wobtqn62tOy4CqpIqK3yn9FfcgMXAdx9G81",
+    "output_text": "Hello! It looks like you've entered a string of characters. How can I assist you with this? Are you looking to decode it, analyze it, or use it for something specific?",
+    "input_chars": 100,
+    "output_chars": 167,
+    "input_gzip": {
+      "original_bytes": 100,
+      "compressed_bytes": 120,
+      "compression_ratio": 0.8333333333333334,
+      "bits_per_byte": 9.6
+    },
+    "output_gzip": {
+      "original_bytes": 167,
+      "compressed_bytes": 139,
+      "compression_ratio": 1.2014388489208634,
+      "bits_per_byte": 6.658682634730539
+    },
+    "output_mean_bits_per_token": 0.19196565276881758,
+    "output_total_bits": 7.102729152446251
+  },
+  {
+    "type": "random_chars_long",
+    "input_text": "aSQHqNgAC72qFl41sNLjVHWGaub52Ztd26fEeVVhDIq2AnHTmt9OBGhnuKoneNo41eoPni6JDWYlgAACTP9gyv1plBArp5B1Id9Z850kEnydx9qWCA79ISjs8JHUdKF0j7elKPoh3pKMzKG5mSoyPstUeC99enq522wjZRL9OaYsP6ihgIqLSmNqE40fAraVNqTIAae24HZKjht3X13npgW2zMj518Y2bTu5X1YqWg21nYCsXoblu17rNy8H6h8l7qgATtLFxJpRa5HSUPwePut0SstzyshA6P3MsHarAJOCBnD3XkfFNuYUPnmbpD0ezNmREpOaUVgAk7Gdp0CXP9K63LSFZH3UDqpNVGMrerqtHioRRdzHzmA4KR1VxavU07zUHLnnBbuQzkChMbyIbNiCdxnuVxUZpfbH9vOWOU6mbjhPInRVkLUhY7gbtP7ySeQMgV0Lh8WvAwFv0Yg7NZRBT7qYHDBTq0Zf2pCLxb0lnXv2Rra6",
+    "output_text": "Hello! It looks like you've posted a long string of characters. How can I assist you with this? Are you looking to decode it, analyze it, or do something else? Let me know!",
+    "input_chars": 500,
+    "output_chars": 172,
+    "input_gzip": {
+      "original_bytes": 500,
+      "compressed_bytes": 416,
+      "compression_ratio": 1.2019230769230769,
+      "bits_per_byte": 6.656
+    },
+    "output_gzip": {
+      "original_bytes": 172,
+      "compressed_bytes": 145,
+      "compression_ratio": 1.186206896551724,
+      "bits_per_byte": 6.744186046511628
+    },
+    "output_mean_bits_per_token": 0.24379826501283194,
+    "output_total_bits": 9.751930600513278
+  },
+  {
+    "type": "shuffled_words",
+    "input_text": "banana quantum if the 73 protocol xyz running marbles abstract ceiling telephone",
+    "output_text": "It looks like your message contains a mix of unrelated words and phrases: \"banana quantum if the 73 protocol xyz running marbles abstract ceiling telephone.\" Could you please clarify or provide more context? Are you asking about a specific concept, protocol, or topic related to quantum computing, networking, or something else? I'd be happy to help once I better understand your question!",
+    "input_chars": 80,
+    "output_chars": 389,
+    "input_gzip": {
+      "original_bytes": 80,
+      "compressed_bytes": 88,
+      "compression_ratio": 0.9090909090909091,
+      "bits_per_byte": 8.8
+    },
+    "output_gzip": {
+      "original_bytes": 389,
+      "compressed_bytes": 269,
+      "compression_ratio": 1.446096654275093,
+      "bits_per_byte": 5.532133676092545
+    },
+    "output_mean_bits_per_token": 0.24584231147272034,
+    "output_total_bits": 18.192331048981305
+  },
+  {
+    "type": "keyboard_mash",
+    "input_text": "asdfghjkl qwerty zxcvbnm poiuytrewq lkjhgfdsa mnbvcxz",
+    "output_text": "It looks like you've entered a sequence of letters that resemble keyboard patterns. How can I assist you with this?",
+    "input_chars": 53,
+    "output_chars": 115,
+    "input_gzip": {
+      "original_bytes": 53,
+      "compressed_bytes": 68,
+      "compression_ratio": 0.7794117647058824,
+      "bits_per_byte": 10.264150943396226
+    },
+    "output_gzip": {
+      "original_bytes": 115,
+      "compressed_bytes": 110,
+      "compression_ratio": 1.0454545454545454,
+      "bits_per_byte": 7.6521739130434785
+    },
+    "output_mean_bits_per_token": 0.36420925652920816,
+    "output_total_bits": 8.012603643642581
+  },
+  {
+    "type": "repeated_nonsense",
+    "input_text": "blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus blorp fleem gnarx zibbit wompus ",
+    "output_text": "It looks like you've repeated the sequence \"blorp fleem gnarx zibbit wompus\" multiple times. How can I assist you with this?",
+    "input_chars": 320,
+    "output_chars": 124,
+    "input_gzip": {
+      "original_bytes": 320,
+      "compressed_bytes": 57,
+      "compression_ratio": 5.614035087719298,
+      "bits_per_byte": 1.425
+    },
+    "output_gzip": {
+      "original_bytes": 124,
+      "compressed_bytes": 119,
+      "compression_ratio": 1.0420168067226891,
+      "bits_per_byte": 7.67741935483871
+    },
+    "output_mean_bits_per_token": 0.03132168282090189,
+    "output_total_bits": 1.0022938502688608
+  },
+  {
+    "type": "unicode_noise",
+    "input_text": "\u03b1\u03b2\u03b3\u03b4 \u2202\u2206\u220f\u2211 \u211c\u2111\u2200\u2203 \u2295\u2297\u2298\u2299 \u2264\u2265\u2260\u2248 \u221e\u2207\u222b\u222e \u2660\u2663\u2665\u2666 \u2605\u2606\u25cb\u25cf",
+    "output_text": "It looks like you've shared a series of special characters and mathematical symbols, including Greek letters, set theory and calculus symbols, logical quantifiers, operators, and some card suit and star symbols. Here's a brief overview of what these symbols represent:\n\n- **Greek letters:**  \n  \u03b1 (alpha), \u03b2 (beta), \u03b3 (gamma), \u03b4 (delta)  \n  Used commonly in mathematics, physics, and engineering.\n\n- **Partial derivative and set symbols:**  \n  \u2202 (partial derivative), \u2206 (increment or Laplace operator), \u220f (product), \u2211 (summation)\n\n- **Special number sets:**  \n  \u211c (real numbers), \u2111 (imaginary part)\n\n- **Logical quantifiers:**  \n  \u2200 (for all), \u2203 (there exists)\n\n- **Operators:**  \n  \u2295 (direct sum or XOR), \u2297 (tensor product or multiplication), \u2298 (empty set with a slash), \u2299 (circled dot)\n\n- **Inequalities and relations:**  \n  \u2264 (less than or equal), \u2265 (greater than or equal), \u2260 (not equal), \u2248 (approximately equal)\n\n- **Mathematical constants and operators:**  \n  \u221e (infinity), \u2207 (nabla or del operator), \u222b (integral), \u222e (contour integral)\n\n- **Card suits:**  \n  \u2660 (spades), \u2663 (clubs), \u2665 (hearts), \u2666 (diamonds)\n\n- **Stars and circles:**  \n  \u2605 (black star), \u2606 (white star), \u25cb (white circle), \u25cf (black circle)\n\nIf you need help using any of these symbols in a particular context\u2014like writing equations, programming, or typesetting\u2014let me know!",
+    "input_chars": 39,
+    "output_chars": 1343,
+    "input_gzip": {
+      "original_bytes": 99,
+      "compressed_bytes": 107,
+      "compression_ratio": 0.9252336448598131,
+      "bits_per_byte": 8.646464646464647
+    },
+    "output_gzip": {
+      "original_bytes": 1407,
+      "compressed_bytes": 764,
+      "compression_ratio": 1.8416230366492146,
+      "bits_per_byte": 4.3439943141435675
+    },
+    "output_mean_bits_per_token": 0.2962355603058848,
+    "output_total_bits": 106.94103727042442
+  }
+]

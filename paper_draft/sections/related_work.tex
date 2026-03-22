@@ -1,0 +1,20 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{Language modeling as compression.}
+The equivalence between predictive modeling and lossless compression has deep roots in information theory \cite{cover1999elements}. \citet{deletang2024language} make this connection concrete for modern LLMs, showing that Chinchilla 70B achieves 8.3\% compression rate on enwik9 via arithmetic coding---far surpassing gzip (32.3\%) and LZMA2 (23.0\%). Critically, they introduce the \emph{adjusted compression rate}, which accounts for model parameters: the 140\,GB model achieves 14008\% adjusted rate on 1\,GB of data, highlighting that the model's weights are themselves a vast information store. \citet{guo2024ranking} extend this connection by showing that compression ratio positively correlates with downstream task performance, proposing compression as a general LLM evaluation metric.
+
+\para{LLM text compressibility.}
+\citet{wang2025lossless} demonstrate that LLM-generated text is dramatically more compressible than human text---$20\times$ versus $5$--$8\times$---when an LLM serves as the compressor. Surface-level Shannon entropy is nearly identical (4.67 vs.\ 4.63 bits per character), but the compression gap widens with context length. \citet{valmeekam2023llmzip} provide new entropy bounds for English using LLaMA-7B: ${\sim}0.71$ bits per character on text8, far below classical estimates. Together, these results suggest that LLM outputs are low-entropy samples from the model's learned distribution.
+
+\para{Memorization and information leakage.}
+\citet{schwarzschild2024adversarial} propose the adversarial compression ratio (ACR) to quantify memorization: when the ratio of output length to shortest eliciting prompt exceeds 1, the ``extra'' information must come from model weights. They find that ${\sim}47\%$ of famous quotes achieve ACR $> 1$ in Pythia-1.4B, and that unlearning techniques are superficial under adversarial probing. This work is closest to ours in spirit, but focuses on memorization detection rather than the general input--output information relationship.
+
+\para{Compression-based text analysis.}
+\citet{jiang2023less} demonstrate that gzip compression length, combined with normalized compression distance (NCD), yields competitive text classification without any neural model. \citet{bao2024neural} extend this to neural NCD using LLMs as compressors but find that better compression does not always yield better classification---an important caveat that compression rate and task-specific information content are related but not identical.
+
+\para{Semantic uncertainty and information content.}
+\citet{kuhn2023semantic} introduce semantic entropy, which accounts for linguistic invariance (different sentences with the same meaning). This measure is more predictive of model accuracy than raw token-level entropy. \citet{meister2023locally} show that natural language operates near a specific information rate, and that sampling tokens with ``typical'' information content produces more coherent text. These works inform our interpretation: surface-level compression may overestimate true semantic information content.
+
+\para{Positioning our work.}
+Unlike prior work that studies compression of LLM outputs in isolation, we \emph{jointly} measure input and output information content and characterize their relationship across a complexity spectrum. We complement LLM-based compression measures with gzip to reveal compressor-dependent effects invisible to either measure alone.

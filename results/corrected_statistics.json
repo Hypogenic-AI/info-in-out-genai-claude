@@ -1,0 +1,70 @@
+{
+  "experiment1": {
+    "regression_slope": 4.147882859738722,
+    "regression_intercept": 3611.399341243223,
+    "regression_r_squared": 0.6487232880646252,
+    "regression_p_value": 0.0005076839437767576,
+    "density_spearman_rho": 0.6428571428571429,
+    "density_spearman_p": 0.08555889101267325,
+    "mean_density_ratio_all": 0.5886607966613778,
+    "mean_density_ratio_L3plus": 0.48580810422451054,
+    "mean_length_expansion": 14.921338147016286
+  },
+  "experiment2_gibberish": {
+    "input_mean_bpb": 7.565269264976813,
+    "output_mean_bpb": 6.434764989893412,
+    "note": "Gibberish inputs have high entropy but model outputs have lower bpb than the inputs in most cases"
+  },
+  "experiment3_corrected": {
+    "n_samples": 99,
+    "min_text_length": 100,
+    "human_mean_bpb": 5.1328096374854635,
+    "human_std_bpb": 0.8878876998197913,
+    "gpt_mean_bpb": 6.146238780941621,
+    "gpt_std_bpb": 0.8579434329020201,
+    "cohens_d": -1.1607996772475166,
+    "wilcoxon_p": 2.3265777967587713e-11,
+    "gpt_more_compressible": false
+  },
+  "experiment4_logprobs": {
+    "key_finding": "LLM logprob bits are much lower than gzip bits, confirming outputs are highly predictable from the model's perspective",
+    "mean_output_bits_per_token": 2.8364341134868947,
+    "data": [
+      {
+        "level": 1,
+        "input_gzip_bits": 320,
+        "output_gzip_bits": 360,
+        "output_logprob_bits": 0.021123537926714866,
+        "output_bits_per_token": 0.004224707585342973
+      },
+      {
+        "level": 2,
+        "input_gzip_bits": 424,
+        "output_gzip_bits": 6040,
+        "output_logprob_bits": 88.3577597229843,
+        "output_bits_per_token": 0.28139413924517254
+      },
+      {
+        "level": 3,
+        "input_gzip_bits": 808,
+        "output_gzip_bits": 14624,
+        "output_logprob_bits": 378.15576573808335,
+        "output_bits_per_token": 0.3288311006418117
+      },
+      {
+        "level": 4,
+        "input_gzip_bits": 1424,
+        "output_gzip_bits": 13728,
+        "output_logprob_bits": 14922.386822123854,
+        "output_bits_per_token": 13.229066331670081
+      },
+      {
+        "level": 5,
+        "input_gzip_bits": 2744,
+        "output_gzip_bits": 18016,
+        "output_logprob_bits": 550.6518727628986,
+        "output_bits_per_token": 0.33865428829206656
+      }
+    ]
+  }
+}

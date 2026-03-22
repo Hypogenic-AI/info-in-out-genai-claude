@@ -1,0 +1,10 @@
+# Large dataset files - download using instructions in README.md
+enwik8
+text8
+gpt_wiki_intro/
+ai_human_text/
+sample_images/
+*.arrow
+*.zip
+*.bz2
+*.tar.gz

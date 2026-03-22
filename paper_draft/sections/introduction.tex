@@ -1,0 +1,23 @@
+\section{Introduction}
+\label{sec:intro}
+
+A user types a single sentence and receives paragraphs of fluent, detailed text. Where does the ``extra'' information come from? This question is not merely philosophical---it has concrete implications for AI safety (can models leak training data?), copyright law (do outputs contain memorized content?), and our fundamental understanding of what language models do.
+
+Information theory provides a natural framework. The data processing inequality states that no deterministic function can increase the mutual information between its input and output beyond what the input already contains \cite{cover1999elements}. A language model, however, is not a deterministic function: it samples from a learned distribution parameterized by billions of weights trained on terabytes of text. These weights constitute an enormous information store. The question, then, is whether LLM outputs draw on information beyond the input \emph{plus} the model's prior knowledge.
+
+\para{Gap in existing work.}
+Recent work has established that language modeling \emph{is} compression \cite{deletang2024language}: the cross-entropy training objective is mathematically equivalent to the compression rate under arithmetic coding. \citet{wang2025lossless} show that LLM-generated text is $20\times$ more compressible than human text when an LLM serves as the compressor. \citet{schwarzschild2024adversarial} propose the adversarial compression ratio (ACR) to detect memorization by finding the shortest prompt that elicits a given output. Yet \textbf{no prior work systematically measures both input and output information content simultaneously and plots their relationship}. Papers study output compression in isolation, without jointly characterizing the input--output information budget.
+
+\para{Our approach.}
+We address this gap by measuring the information content of both prompts and responses using two complementary compressors: gzip (a universal, model-free statistical compressor) and LLM log-probabilities (which measure surprisal under the generating model's own distribution). We vary input complexity across six levels, include gibberish controls, and analyze a paired human-vs-LLM corpus (\gptwiki, $n=99$ pairs).
+
+\para{Preview of results.}
+We find that output information \emph{density} is consistently lower than input density (mean \densityratio $= 0.49$ for complex prompts), even though total output bits exceed total input bits due to $6$--$44\times$ length expansion. From the model's own log-probability perspective, outputs contain only ${\sim}0.3$ \bpt of surprise---far less than gzip suggests---revealing that LLM outputs lie on a low-dimensional manifold of the model's learned distribution. We also show that gzip and LLM-based compressors give \emph{opposite} conclusions about whether LLM text is more compressible than human text, reconciling an apparent contradiction in the literature.
+
+\para{Contributions.} We make the following contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We provide the first systematic empirical measurement of the input--output information relationship in LLMs, using two complementary compressors across prompts of varying complexity.
+    \item We decompose the apparent information amplification into length expansion and density reduction, showing that per-byte information content always decreases from input to output.
+    \item We demonstrate that the choice of compressor is decisive: gzip and LLM-based compression yield opposite conclusions about LLM text compressibility, reconciling conflicting results in prior work.
+    \item We establish that gibberish inputs with high raw entropy produce outputs of normal information density, confirming that raw entropy does not equal usable information for LLMs.
+\end{itemize}
