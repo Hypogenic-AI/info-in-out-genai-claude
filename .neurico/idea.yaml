@@ -1,0 +1,32 @@
+idea:
+  title: "Does information in \u2248 information out in modern GenAI?"
+  domain: artificial_intelligence
+  hypothesis: 'The information content of a generative model''s output is bounded
+    by the information content of its input. For LLMs and image generators, if output
+    complexity (measured via compression ratio) consistently exceeds input complexity,
+    the hypothesis is false; if output complexity tracks or falls below input complexity,
+    this supports the hypothesis.
+
+    '
+  background:
+    description: 'The idea is to empirically test whether the information content
+      of generative AI outputs is fundamentally limited by the information content
+      of their inputs. For LLMs, both input and output complexity can be measured
+      via compression ratio using a reference LLM. For image generators, prompt complexity
+      is measured similarly, and output complexity is measured via a learned image
+      compressor. The relationship between input and output complexity is then plotted.
+      A caveat is that raw entropy (e.g., gibberish) does not equate to usable information,
+      as aligned LLMs do not produce meaningful outputs in response to gibberish;
+      thus, the focus is on information that the model can actually route through
+      its learned representations.
+
+      '
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/Zs55gEaURmPn94YOsXv8
+    idea_id: does_information_in___informat_20260322_114203_191042bf
+    created_at: '2026-03-22T11:42:03.536330'
+    status: submitted
+    github_repo_name: info-in-out-genai-claude
+    github_repo_url: https://github.com/Hypogenic-AI/info-in-out-genai-claude
